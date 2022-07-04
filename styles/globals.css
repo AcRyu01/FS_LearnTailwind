@@ -15,12 +15,95 @@
   .circle {
     @apply bg-red-400 h-60 w-60 rounded-xl;
   }
+  .nav-p {
+    @apply px-4 tablet:px-6 laptop:px-12 desktop:px-20;
+  }
+  .ct-gap {
+    @apply gap-1 tablet:gap-4 laptop:gap-8 desktop:gap-11;
+  }
+  .ct-text-size {
+    @apply text-sm laptop:text-base desktop:text-lg;
+  }
+  .ct-h {
+    @apply h-[56px] mobile:h-[90px];
+  }
 }
 
 @layer utilities {
   .content-auto {
     content-visibility: auto;
   }
+}
+@font-face {
+  font-family: "Sarabun";
+  src: url("https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@6/fonts/Sarabun/Sarabun-Thin.woff2")
+    format("woff2");
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sarabun";
+  src: url("https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@6/fonts/Sarabun/Sarabun-ExtraLight.woff2")
+    format("woff2");
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sarabun";
+  src: url("https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@6/fonts/Sarabun/Sarabun-Light.woff2")
+    format("woff2");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sarabun";
+  src: url("https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@6/fonts/Sarabun/Sarabun-Regular.woff2")
+    format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sarabun";
+  src: url("https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@6/fonts/Sarabun/Sarabun-Medium.woff2")
+    format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sarabun";
+  src: url("https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@6/fonts/Sarabun/Sarabun-SemiBold.woff2")
+    format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sarabun";
+  src: url("https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@6/fonts/Sarabun/Sarabun-Bold.woff2")
+    format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sarabun";
+  src: url("https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@6/fonts/Sarabun/Sarabun-ExtraBold.woff2")
+    format("woff2");
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
 }
 
 * {
@@ -31,12 +114,5 @@ body {
   padding: 0;
   margin: 0;
   min-height: 90vh;
-  font-family: theme(fontFamily.serif);
-}
-
-@media screen(laptop) {
-  html,
-  body {
-    font-family: theme(fontFamily.sans);
-  }
+  font-family: "Sarabun", sans-serif;
 }
